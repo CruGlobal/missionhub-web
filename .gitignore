@@ -6,4 +6,5 @@ coverage-react
 schema.json
 __generated__
 .env
-.env.local
+.env.*
+.next

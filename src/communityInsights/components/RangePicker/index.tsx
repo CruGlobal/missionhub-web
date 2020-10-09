@@ -131,13 +131,13 @@ const RangePicker = ({ onDatesChange, startDate, endDate }: Props) => {
                 // @ts-ignore
                 onDatesChange={datesChanged}
                 focusedInput={focus}
-                onFocusChange={focusedInput => {
+                onFocusChange={(focusedInput) => {
                     setFocus(focusedInput);
                 }}
                 hideKeyboardShortcutsPanel={true}
                 readOnly={true}
                 noBorder={true}
-                isOutsideRange={day => day.isAfter(moment.now())}
+                isOutsideRange={(day) => day.isAfter(moment.now())}
             />
         </Container>
     );

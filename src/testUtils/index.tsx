@@ -1,5 +1,5 @@
 import React, { ReactNode, ReactElement } from 'react';
-import { ApolloProvider } from 'react-apollo-hooks';
+import { ApolloProvider } from '@apollo/client';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from 'emotion-theming';
 import { IMocks } from 'graphql-tools';

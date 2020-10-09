@@ -2,15 +2,16 @@ import styled, { CreateStyled } from '@emotion/styled';
 
 export const missionhubTheme = {
     font: {
-        family: 'Source Sans Pro',
+        family: 'Source Sans Pro, sans-serif',
         size: '14px',
     },
     colors: {
-        primary: '#505256',
+        primary: '#505256', // Cavern
         secondary: '#B4B6BA',
         highlight: '#3CC8E6',
         highlightDarker: '#007398',
         white: '#ffffff',
+        background: '#424242',
     },
     graph: {
         background: 'transparent',

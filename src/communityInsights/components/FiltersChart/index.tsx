@@ -75,13 +75,11 @@ const FiltersChart = ({
     const mapDataMonthly = (data: any) => {
         const graphData = [];
         const end = moment(endDate).endOf('month');
-        const start = moment(endDate)
-            .subtract(11, 'months')
-            .startOf('month');
+        const start = moment(endDate).subtract(11, 'months').startOf('month');
 
         for (let m = start; m.isBefore(end); m.add(1, 'months')) {
             const endOfMonth = moment(m).endOf('month');
-            const exists = _.filter(data, e =>
+            const exists = _.filter(data, (e) =>
                 moment(e.date).isBetween(m, endOfMonth),
             );
             const reduced = _.reduce(exists, (result, current) => {

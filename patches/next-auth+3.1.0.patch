@@ -1,0 +1,12 @@
+diff --git a/node_modules/next-auth/dist/server/lib/oauth/callback.js b/node_modules/next-auth/dist/server/lib/oauth/callback.js
+index 6f52bf7..590e1e8 100644
+--- a/node_modules/next-auth/dist/server/lib/oauth/callback.js
++++ b/node_modules/next-auth/dist/server/lib/oauth/callback.js
+@@ -106,6 +106,7 @@ var _default = function () {
+                 account,
+                 OAuthProfile
+               } = yield _getProfile(error, profileData, accessToken, refreshToken, provider);
++              account.idToken = results.id_token;
+               callback(error, profile, account, OAuthProfile);
+             });
+ 
